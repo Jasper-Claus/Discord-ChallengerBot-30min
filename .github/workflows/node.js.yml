@@ -1,5 +1,5 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+# Dieser Workflow führt eine saubere Installation der Node-Abhängigkeiten durch, speichert und stellt sie wieder her, erstellt den Quellcode und führt Tests in verschiedenen Node-Versionen aus.
+# Weitere Informationen finden Sie unter: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
 name: Node.js CI
 
