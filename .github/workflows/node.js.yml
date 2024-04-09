@@ -8,26 +8,19 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
-name: Node.js CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x] # Aktualisiert auf die neuesten LTS-Versionen von Node.js
+        node-version: [14.x, 20.x]
+        # Siehe unterstützten Node.js-Veröffentlichungsplan unter https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2 # Aktualisiert auf die neueste stabile Version
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2 # Aktualisiert auf die neueste stabile Version
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
