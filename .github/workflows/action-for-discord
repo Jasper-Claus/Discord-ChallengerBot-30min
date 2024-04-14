@@ -1,7 +1,0 @@
-- name: Discord notification
-  env:
-    DISCORD_WEBHOOK: ${{ https://discord.com/api/webhooks/1229206277540941894/OxsOjPb_w3Y6QX0BGbUMECxpAhKtBy4xLdQY7OH0-OpqA8g-Jmu0zlJlGZh2nabRGYDG }}
-  uses: JasperCaus/action-discord@master
-  with:
-    args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.'
-    args = "I showed you my commit. Please respon
