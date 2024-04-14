@@ -4,3 +4,4 @@
   uses: HOOK/action-discord@master
   with:
     args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.'
+    args = "I showed you my commit. Please respon
