@@ -23,12 +23,10 @@ module.exports = {
 };
 
 
-# ´/commands` for the discord-bo`
+# ´/commands` for the discord-bot`
 
-| Command | Description |
-| ------- | ----------- |
-| /ping   | Responds with "Pong". This is a simple test command to check if the bot is responding. |
-| /user   | Returns information about the calling user. Depending on the implementation, this can include the username, ID, role, and other relevant information. |
-| /timer  | Starts, stops, or checks a timer. `/timer start` starts the timer, `/timer stop` stops the timer and displays the elapsed time, and `/timer check` displays the currently elapsed time since the start of the timer. |
-
+Command	Description
+/ping	Responds with "Pong". This is a simple test command to check if the bot is responding.
+/user	Returns information about the calling user. Depending on the implementation, this can include the username, ID, role, and other relevant information.
+/timer	Starts, stops, or checks a timer. /timer start starts the timer, /timer stop stops the timer and displays the elapsed time, and /timer check displays the currently elapsed time since the start of the timer.
 
