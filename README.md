@@ -4,8 +4,6 @@ This Discord bot was developed with Node JS to practice programming and testing 
 # The Challenge
 The challenge is to program another 'slash' command within 30 minutes. If the command works, create a pull request. So get started and expand the bot according to your ideas. I look forward to your ideas.
 
-
-
 # Creating a new Slash Command
 To create a new slash command, you need to follow these steps:
 
@@ -25,7 +23,7 @@ module.exports = {
 };
 
 
-# /commands for the discord-bot`
+# ´/commands` for the discord-bot
 
 | Command | Description |
 | ------- | ----------- |
