@@ -4,6 +4,7 @@ This Discord bot was developed with Node JS to practice programming and testing 
 # The Challenge
 The challenge is to program another 'slash' command within 30 minutes. If the command works, create a pull request. So get started and expand the bot according to your ideas. I look forward to your ideas.
 
+
 # Creating a new Slash Command
 To create a new slash command, you need to follow these steps:
 
@@ -21,14 +22,13 @@ module.exports = {
         interaction.reply('This is the response of my command');
     },
 };
-
+```
 
 # Commands for the Discord Bot
-
+`
 | Command | Description |
 | ------- | ----------- |
 | /ping   | Responds with "Pong". This is a simple test command to check if the bot is responding. |
 | /user   | Returns information about the calling user. Depending on the implementation, this can include the username, ID, role, and other relevant information. |
 | /timer  | Starts, stops, or checks a timer. `/timer start` starts the timer, `/timer stop` stops the timer and displays the elapsed time, and `/timer check` displays the currently elapsed time since the start of the timer. |
-
 
