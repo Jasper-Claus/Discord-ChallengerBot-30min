@@ -1,17 +1,31 @@
-const { SlashCommandBuilder } = require('discord.js');
-const { data } = require('./ping');
+// commands/utilities/timer.js
+const { SlashCommandBuilder } = require('@discordjs/builders');
 
-module.exports = { 
+module.exports = {
     data: new SlashCommandBuilder()
         .setName('timer')
-        .setDescription('Start a timer for a specified amount of time.')
-        .addIntegerOption(option => option.setName('duration').setDescription('The duration of the timer in seconds.').setRequired(true)),
+        .setDescription('Startet oder stoppt den Timer')
+        .addStringOption(option =>
+            option.setName('action')
+                .setDescription('Die Aktion ausführen')
+                .setRequired(true)),
     async execute(interaction) {
-        const { duration } = interaction.options.getInteger('duration');
-        await interaction.reply(`Timer started for ${duration} seconds.`);
-        setTimeout(() => {
-            interaction.followUp('Timer done!');
-        }, duration * 1000);
-    }  
-} 
-    
+        const action = interaction.options.getString('action');
+
+        if (action === 'start') {
+            global.startTime = Date.now();
+            await interaction.reply('Timer gestartet');
+        } else if (action === 'stop') {
+            if (!global.startTime) {
+                await interaction.reply('Der Timer wurde noch nicht gestartet');
+                return;
+            }
+
+            const elapsedTime = Date.now() - global.startTime;
+            const seconds = Math.floor(elapsedTime / 1000);
+            delete global.startTime;
+
+            await interaction.reply(`Timer gestoppt. Vergangene Zeit: ${seconds} Sekunden`);
+        }
+    },
+};
