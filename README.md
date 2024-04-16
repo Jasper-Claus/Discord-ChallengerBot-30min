@@ -25,7 +25,7 @@ module.exports = {
 ```
 
 # Commands for the Discord Bot
-`
+
 | Command | Description |
 | ------- | ----------- |
 | /ping   | Responds with "Pong". This is a simple test command to check if the bot is responding. |
