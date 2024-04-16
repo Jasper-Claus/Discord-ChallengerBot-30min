@@ -23,7 +23,7 @@ module.exports = {
 };
 
 
-# ´/commands` for the discord-bot
+# Commands for the Discord Bot
 
 | Command | Description |
 | ------- | ----------- |
