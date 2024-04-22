@@ -31,4 +31,4 @@ module.exports = {
 | /ping   | Responds with "Pong". This is a simple test command to check if the bot is responding. |
 | /user   | Returns information about the calling user. Depending on the implementation, this can include the username, ID, role, and other relevant information. |
 | /timer  | Starts, stops, or checks a timer. `/timer start` starts the timer, `/timer stop` stops the timer and displays the elapsed time. |
-
+| /funnypic | Responds with a random Imgur image |
