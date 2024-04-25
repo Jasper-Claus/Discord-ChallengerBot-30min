@@ -1,4 +1,4 @@
-<img src="bilder/Untitled-1222.png">
+<img src="bilder/head_pic.png">
 
 # Discord-ChallengerBot-30min ##
 This Discord bot was developed with Node JS to practice programming and testing bot functions in Discord. The bot is currently equipped with a simple slash command that responds to the /ping command with "Pong". More slash commands are needed to realize the full potential of the bot.
