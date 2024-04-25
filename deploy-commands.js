@@ -25,25 +25,21 @@ for (const folder of commandFolders) {
 	}
 }
 
-// Construct and prepare an instance of the REST module
-const rest = new REST().setToken(token);
+const config = require('./config.json');
 
-// and deploy your commands!
+const rest = new REST({ version: '9' }).setToken(config.token);
+
 (async () => {
-	try {
-		console.log(`Started refreshing ${commands.length} application (/) commands.`);
+    try {
+        console.log('Started refreshing application (/) commands.');
 
-		// The put method is used to fully refresh all commands in the guild with the current set
-		const data = await rest.put(
-			Routes.applicationGuildCommands(clientId, guildId),
-			{ body: commands },
-		);
+        await rest.put(
+            Routes.applicationGuildCommands(config.application_id, config.guild_id),
+            { body: commands },
+        );
 
-		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
-	} catch (error) {
-		// And of course, make sure you catch and log any errors!
-		console.error(error);
-	}
+        console.log('Successfully reloaded application (/) commands.');
+    } catch (error) {
+        console.error(error);
+    }
 })();
-
-
