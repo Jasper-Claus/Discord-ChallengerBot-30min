@@ -15,7 +15,8 @@
     "async": "^3.2.5",
     "discord-api-types": "^0.37.80",
     "discord.js": "^14.12.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "undici": "^5.28.4"
   },
   "devDependencies": {
     "eslint": "^8.57.0"
