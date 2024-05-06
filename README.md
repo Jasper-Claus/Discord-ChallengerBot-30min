@@ -28,8 +28,11 @@ module.exports = {
 
 # Commands for the Discord Bot
 
+# Commands for the Discord Bot
+
 | Command | Description |
 | ------- | ----------- |
+| /mystery | Sends a little encouragement. Responds with "you are beautiful today ❤" when called. |
 | /ping   | Responds with "Pong". This is a simple test command to check if the bot is responding. |
 | /user   | Returns information about the calling user. Depending on the implementation, this can include the username, ID, role, and other relevant information. |
 | /timer  | Starts, stops, or checks a timer. `/timer start` starts the timer, `/timer stop` stops the timer and displays the elapsed time. |
