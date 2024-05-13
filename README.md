@@ -26,7 +26,7 @@ module.exports = {
 };
 ```
 
-# Commands for the Discord Bot
+
 
 # Commands for the Discord Bot
 
